@@ -10,7 +10,7 @@ services:
       - diagnostics
     environment:
       - FIRMWARE_VERSION=v1.1.0
-      - FIRMWARE_SHORT_HASH=c557d09
+      - FIRMWARE_SHORT_HASH=610e700
       - DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
       - DBUS_SESSION_BUS_ADDRESS=unix:path=/session/dbus/session_bus_socket
     restart: on-failure
@@ -38,7 +38,7 @@ services:
       - nebra:/var/nebra
     environment:
       - FIRMWARE_VERSION=v1.1.0
-      - FIRMWARE_SHORT_HASH=c557d09
+      - FIRMWARE_SHORT_HASH=610e700
     labels:
       io.balena.features.sysfs: 1
       io.balena.features.procfs: 1
@@ -55,7 +55,7 @@ services:
       - nebra:/var/nebra
     environment:
       - FIRMWARE_VERSION=v1.1.0
-      - FIRMWARE_SHORT_HASH=c557d09
+      - FIRMWARE_SHORT_HASH=610e700
     expose:
       - "1681"
 
@@ -72,7 +72,7 @@ services:
       - "4467"
     environment:
       - FIRMWARE_VERSION=v1.1.0
-      - FIRMWARE_SHORT_HASH=c557d09
+      - FIRMWARE_SHORT_HASH=610e700
     volumes:
       - pktfwdr:/var/pktfwd
       - miner-storage:/var/data
@@ -84,7 +84,7 @@ services:
       - dbus-session
     environment:
       - FIRMWARE_VERSION=v1.1.0
-      - FIRMWARE_SHORT_HASH=c557d09
+      - FIRMWARE_SHORT_HASH=610e700
       - DIAGNOSTICS_VERSION=95860ee
       - DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
       - GATEWAYRS_VERSION=bdafaf4
@@ -117,7 +117,7 @@ services:
     environment:
       - DBUS_ADDRESS=unix:path=/session/dbus/session_bus_socket
       - FIRMWARE_VERSION=v1.1.0
-      - FIRMWARE_SHORT_HASH=c557d09
+      - FIRMWARE_SHORT_HASH=610e700
 
 volumes:
   miner-storage:
